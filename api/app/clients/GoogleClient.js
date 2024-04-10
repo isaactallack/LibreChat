@@ -55,7 +55,7 @@ class GoogleClient extends BaseClient {
 
   /* Google specific methods */
   constructUrl() {
-    return `${endpointPrefix}/v1/projects/${this.project_id}/locations/${loc}/publishers/${publisher}/models/${this.modelOptions.model}:serverStreamingPredict`;
+    return `${endpointPrefix}/v1beta/projects/${this.project_id}/locations/${loc}/publishers/${publisher}/models/${this.modelOptions.model}:serverStreamingPredict`;
   }
 
   async getClient() {
